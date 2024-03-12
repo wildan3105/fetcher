@@ -1,0 +1,41 @@
+{
+    "name": "fetcher",
+    "version": "1.0.0",
+    "description": "Simple CLI to fetch and download content(s) from given link(s)",
+    "main": "builds/fetcher.js",
+    "bin": {
+        "fetcher": "./builds/fetcher.js"
+    },
+    "engines": {
+        "node": "18.x",
+        "npm": ">=9.5.0"
+    },
+    "scripts": {
+        "start": "node builds/index.js",
+        "start:dev": "ts-node fetcher.ts",
+        "build": "tsc",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "format": "prettier --config .prettierrc.js --write './**/*.{js,ts,json,yml,yaml}' --ignore-path .prettierignore",
+        "format:check": "prettier --config .prettierrc.js --check './**/*.{js,ts,json,yml,yaml}' --ignore-path .prettierignore",
+        "test": "jest ./**.test.ts"
+    },
+    "author": "Wildan S. Nahar",
+    "license": "ISC",
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "eslint": "^8.56.0",
+        "jest": "^29.7.0",
+        "prettier": "^2.8.8",
+        "ts-jest": "^29.1.2",
+        "ts-node-dev": "^2.0.0",
+        "typescript": "^5.4.2"
+    },
+    "dependencies": {
+        "axios": "^1.6.7",
+        "cheerio": "^1.0.0-rc.12",
+        "commander": "^12.0.0"
+    }
+}
