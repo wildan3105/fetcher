@@ -160,7 +160,7 @@ const program = new Command();
 program.version('1.0.0').description(programDesc);
 
 program.configureOutput({
-    writeOut: (str) => process.stdout.write(`[OUT] ${str}`),
+    writeOut: (str) => process.stdout.write(`${str}`),
     writeErr: (str) => process.stdout.write(`[ERR] ${str}`),
     outputError: (str, write) => write(colorizeLog(str, LogType.Error))
 });

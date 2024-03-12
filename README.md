@@ -6,22 +6,19 @@ A simple CLI app to fetch and download contents from given link(s)
 
 ### Using TypeScript file directly
 
+**Prerequisite**
+This requires `ts-node` to be installed globally on your machine.
+
 1. Install the dependencies
 
 ```bash
 npm i
 ```
 
-2. Build the project
-
-```bash
-npm run build
-```
-
-3. Run the app
+2. Run the app
 
 ```
-node builds/fetcher.js
+ts-node fetcher.ts -h
 ```
 
 **Note**

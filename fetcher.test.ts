@@ -33,6 +33,7 @@ describe('FetchCommand', () => {
 
         expect(mockLog).toHaveBeenCalled();
 
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         expect(require('fs').writeFileSync).toHaveBeenCalled();
 
         mockLog.mockRestore();
@@ -47,6 +48,7 @@ describe('FetchCommand', () => {
 
         expect(mockLog).toHaveBeenCalled();
 
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         expect(require('fs').writeFileSync).not.toHaveBeenCalled();
 
         mockLog.mockRestore();
