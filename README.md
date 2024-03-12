@@ -7,6 +7,7 @@ A simple CLI app to fetch and download contents from given link(s)
 ### Using TypeScript file directly
 
 **Prerequisite**
+
 This requires `ts-node` to be installed globally on your machine.
 
 1. Install the dependencies
@@ -22,6 +23,7 @@ ts-node fetcher.ts -h
 ```
 
 **Note**
+
 The HTML files will be stored relative to the location of the TypeScript file.
 
 ### Using npm (easiest, recommended way)
@@ -51,6 +53,7 @@ fetcher -h
 ```
 
 **Note**
+
 When installed via npm, the CLI tool operates relative to your current working directory, allowing it to save HTML files in your current location.
 
 ### Using docker
@@ -68,7 +71,8 @@ docker run fetcher -h
 ```
 
 **Note**
-With Docker, the CLI tool operates inside a container, and any HTML files it creates are confined to the container's file system. They are not directly accessible from outside the container without additional steps like copying or mounting volumes (which requires additional steps and time to configure).
+
+With Docker, the CLI tool operates inside a container, and any HTML files it creates are confined to the container's file system. They are not directly accessible from outside the container without additional steps like copying or mounting volumes
 
 ## Usage
 
@@ -89,8 +93,10 @@ $ ./fetcher --help
     -h, --help                 display help for command
 
   Examples
-    $ ./fetcher https://wildans.id
-    $ Success for http://wildans.id HTML content stored as /mnt/c/Users/62823/Documents/fetcher-files/wildans.id.html
+    $ fetcher --metadata wildan.id https://google.com https://example.com
+    $ [ERR] Invalid link: 'wildan.id'. Please use the protocol of either 'http' or 'https'
+Visited page of https://google.com at Tue Mar 12 2024 16:03:39 GMT+0700 (Western Indonesia Time) with num_of_links: 15, num_of_images: 2, HTML content stored as /mnt/c/Users/62823/Documents/repos/personal/fetcher/google.com.html
+Visited page of https://example.com at Tue Mar 12 2024 16:03:40 GMT+0700 (Western Indonesia Time) with num_of_links: 1, num_of_images: 0, HTML content stored as /mnt/c/Users/62823/Documents/repos/personal/fetcher/example.com.html
 ```
 
 ## Future improvements
