@@ -99,6 +99,20 @@ Visited page of https://google.com at Tue Mar 12 2024 16:03:39 GMT+0700 (Western
 Visited page of https://example.com at Tue Mar 12 2024 16:03:40 GMT+0700 (Western Indonesia Time) with num_of_links: 1, num_of_images: 0, HTML content stored as /mnt/c/Users/62823/Documents/repos/personal/fetcher/example.com.html
 ```
 
+## Notes:
+
+-   Number of Links:
+
+```
+The count includes all anchor (<a>) elements with href attributes starting with "http://" or "https://", indicating absolute URLs. This encompasses both internal and external links present in the HTML content.
+```
+
+-   Number of Images:
+
+```
+This count is based on graphical representations represented by <img> elements with src attributes, including both GIFs and static images. It encompasses all images present in the HTML content, whether directly embedded or referenced via external URLs.
+```
+
 ## Future improvements
 
 -   Separation of concern for handling: getting the data and generating output message
