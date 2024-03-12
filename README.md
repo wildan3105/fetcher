@@ -77,7 +77,7 @@ With Docker, the CLI tool operates inside a container, and any HTML files it cre
 ## Usage
 
 ```bash
-$ ./fetcher --help
+$ fetcher --help
 
   CLI program to fetch web pages and save them for later retrieval and browsing
 
