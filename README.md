@@ -4,6 +4,12 @@ A simple CLI app to fetch and download contents from given link(s)
 
 ## How to run
 
+### Prerequisite
+
+-   Docker
+-   NodeJS >= v18
+-   NPM >= 9
+
 ### Using TypeScript file directly
 
 **Prerequisite**
